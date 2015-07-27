@@ -21,8 +21,12 @@ if has("vms")
 
 au BufRead,BufNewFile *.md set filetype=markdown
 
+" Color Schemes
 let g:hybrid_use_Xresources = 1
 colorscheme hybrid
+
+" Markdown instant
+let g:instant_markdown_slow = 1
 
 " SQL Profiles
 let g:dbext_default_profile_GCD_Production_Main = 'type=SQLSRV:integratedlogin=1:srvname=GCDVWPDBS01'
