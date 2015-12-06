@@ -30,10 +30,6 @@ let g:instant_markdown_slow = 1
 
 " SQL Profiles
 let g:dbext_default_profile_GCD_Production_Main = 'type=SQLSRV:integratedlogin=1:srvname=GCDVWPDBS01'
-let g:dbext_default_profile_GCD_Production_Main_DisasterTracker = 'type=SQLSRV:integratedlogin=1:srvname=GCDVWPDBS01:dbname=GCD_DisasterTracker'
-let g:dbext_default_profile_GCD_Production_Main_Intranet = 'type=SQLSRV:integratedlogin=1:srvname=GCDVWPDBS01:dbname=GCD_Intranet'
-
-let g:dbext_default_profile_GCD_Production_App_EmergencyDisaster = 'type=SQLSRV:integratedlogin=1:srvname=GCDVWPAPPBLE01:dbname=EmergencyDisaster'
 
 let g:dbext_default_profile = 'GCD_Production_Main'
 
