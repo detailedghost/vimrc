@@ -13,11 +13,11 @@ set nu
 filetype plugin indent on
 syntax on
 
-if has("vms")
-			set nobackup
-	else
-			set backup
-	endif
+"if has("vms")
+"	set nobackup
+"else
+"	set backup
+"endif
 
 au BufRead,BufNewFile *.md set filetype=markdown
 
@@ -29,12 +29,10 @@ colorscheme hybrid
 let g:instant_markdown_slow = 1
 
 " SQL Profiles
-let g:dbext_default_profile_GCD_Production_Main = 'type=SQLSRV:integratedlogin=1:srvname=GCDVWPDBS01'
-
-let g:dbext_default_profile = 'GCD_Production_Main'
+"let g:dbext_default_profile_prod = 'type=SQLSRV:integratedlogin=1:vrvname=[server]"'
+"let g:dbext_default_profile_prod = ''
 
 " Vim pipe commands
 let b:vimpipe_command="multimarkdown"
 let b:vimpipe_filetype="html"
-
 let b:vimpipe_command='osql mydatabase'
